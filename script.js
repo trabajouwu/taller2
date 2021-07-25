@@ -25,6 +25,29 @@ d.addEventListener("click", e => {
   })
 })
 
+/*Tercer ejercicio */
+
+const palabras = ["Arancel", "Comercio exterior", "Competencia económica", "Globalización"],
+palabrasSignificado = ["Es una clase de impuesto dado a un producto extranjero, el cual existe con el fin de obtener dinero y proteger a las empresas locales", "Es el comercio de productos o servicios entre varios países", "Es el término con el que nos referimos a la 'rivalidad' que existe entre dos o más empresas de un sector, las cuales buscan mayor beneficio", "Es el proceso en el que la economía mundial se unifica, disminuyendo los costes de importación y exportación y buscando una mayor cooperación económica internacional"],
+$selectorSignificado = d.querySelectorAll(".palabra p"),
+$selectorSignificadoDiv = d.querySelectorAll(".palabra"),
+$significadosTitulo = d.querySelector(".significado-titulo"),
+$significadosTexto = d.querySelector(".significado-texto");
+
+d.addEventListener("click", e => {
+  $selectorSignificado.forEach((el, index) => {
+    if(e.target === el || e.target === $selectorSignificadoDiv[index]){
+      $significadosTitulo.textContent = palabras[index];
+      $significadosTexto.textContent = palabrasSignificado[index];
+      $selectorSignificado.forEach(element => {
+        element.classList.remove("color-naranja");
+      });
+      el.classList.add("color-naranja");
+    }
+  });
+})
+
+
 /*Cuarto ejercicio */
 
 const topPaises = ["Argentina", "El Salvador", "Ecuador", "Panamá", "Uruguay", "Colombia", "Brasil", "México", "Perú", "Chile"],
