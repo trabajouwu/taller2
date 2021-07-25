@@ -94,6 +94,67 @@ nav h2 {
 
 .linea-de-tiempo {
   width: 70vw;
+  padding-top: 1vh;
+}
+
+/*Tercer punto*/
+
+.cuadro-significados {
+  width: 60vw;
+  height: 70vh;
+  background-color: var(--blue);
+  text-align: center;
+  margin-top: 7.5vh;
+  margin-left: 8vw;
+}
+
+.palabras {
+  width: 30%;
+  height: 100%;
+  background-color: black;
+}
+
+.palabra {
+  height: 25%;
+  width: 100%;
+  vertical-align: middle;
+  color: #d9d9d9;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.palabra:hover {
+  color: var(--orange);
+}
+
+.palabra p {
+  margin: 0 2vw;
+  font-size: 2rem;
+}
+
+.prueba {
+  position: fixed;
+  height: 70vh;
+  width: 42vw;
+  top: 22.5vh;
+  left: 51vw;
+}
+
+.significado-titulo {
+  font-size: 4rem;
+  color: var(--orange);
+  font-weight: 800;
+  padding-top: 15vh;
+}
+
+.significado-texto {
+  font-size: 2rem;
+  padding-top: 5vh;
+  color: #d9d9d9;
+  margin: 0 3rem;
 }
 
 /*Cuarto punto*/
